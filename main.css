@@ -1,15 +1,15 @@
 @font-face {
-    font-family: "Latin Modern";
-    src: url('http://mirrors.ctan.org/fonts/lm/fonts/opentype/public/lm/lmsans12-regular.otf');
-  }
-
-html {
-  font-family: Latin Modern;
+    font-family: 'latin_modern_sans12_regular';
+    src: url('lmsans12-regular-webfont.woff2') format('woff2'),
+         url('lmsans12-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 }
 
 body {
   /*background-color: lightgrey; */
   margin: 0;
+  font-family: 'latin_modern_sans12_regular';
 }
 
 h1 {
