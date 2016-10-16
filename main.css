@@ -1,5 +1,10 @@
+@font-face {
+    font-family: "Latin Modern";
+    src: url('http://mirrors.ctan.org/fonts/lm/fonts/opentype/public/lm/lmsans12-regular.otf');
+  }
+
 html {
-  font-family: helvetica;
+  font-family: Latin Modern;
 }
 
 body {
@@ -22,12 +27,38 @@ p {
   text-align: center;
 }
 
-ul{
+p.copyright {
+  font-size: 12px;
+  color: lightgrey;
+}
+
+a {
+  color: #333;
+  hover: #111;
+  text-decoration: none;
+}
+
+#download-link {
+  text-align: center;
+}
+
+ul {
   list-style-type:circle;
   margin-left: 10%;
   padding-left: 10%;
 }
 
+
+img.responsive {
+  display: block;
+  margin: auto;
+  max-width: 60%;
+  height: auto;
+}
+
+
+
+/*Navigation Pane*/
 ul.topnav {
     list-style-type: none;
     margin: 0;
@@ -48,23 +79,11 @@ ul.topnav li a {
 
 ul.topnav li a:hover:not(.active) {background-color: #111;}
 
-ul.topnav li a.active {background-color: #4CAF50;}
+ul.topnav li a.active {background-color: rgb(58,116, 176);}
 
 ul.topnav li.right {float: right;}
 
 @media screen and (max-width: 600px){
     ul.topnav li.right,
     ul.topnav li {float: none;}
-}
-
-img.responsive {
-  display: block;
-  margin: auto;
-  max-width: 60%;
-  height: auto;
-}
-
-p.copyright {
-  font-size: 12px;
-  color: lightgrey;
 }
